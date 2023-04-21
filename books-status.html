@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Library Management</title>
+    <link href="./css/style.css" rel="stylesheet">
+	
+</head>
+<body>
+    <div id="main-wrapper">
+
+		<!-- sidebar start -->
+        <div class="deznav">
+            <div class="deznav-scroll">
+				<div class="main-profile">
+					<div class="image-bx">
+						<img src="image/mypic.jpg" alt="">
+					</div>
+					<h5 class="name"><span class="font-w400">Hello,</span> Bharathi</h5>
+					<p class="email">bharathi.ad20@bitsathy.ac.in</p>
+				</div>
+				<ul class="metismenu" id="menu">
+                    <li><a class="has-arrow ai-icon" aria-expanded="false">
+							<i class="flaticon-144-layout"></i>
+							<span class="nav-text">Main Menu</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="dashboard.html">Dashboard</a></li>
+							<li><a href="book-collection.html">Books Collection</a></li>
+							<li><a href="famous-book.html">Famous Books</a></li>
+							<li><a href="book-purchase.html">Purchase books</a></li>
+							<li><a href="books-status.html">Books status</a></li>
+						</ul>
+                    </li>	
+                </ul>
+			</div>
+        </div>
+		<!-- sidebar end -->
+
+		<!-- main content -->
+        <div class="content-body">
+			<div class="container-fluid">
+				<div class="form-head mb-4 mb-sm-5 d-flex  flex-wrap align-items-center ">
+					<h2 class="font-w600 mb-0 mr-auto">Books Status</h2>
+				</div>
+				
+				<div class="project-nav">
+					<div class="card-action card-tabs  mr-auto">
+						<ul class="nav nav-tabs style-2">
+							<li class="nav-item">
+								<a href="#navpills-1" class="nav-link active" data-toggle="tab" aria-expanded="false">All Books<span class="badge badge-pill shadow-primary badge-primary">15</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="#navpills-2" class="nav-link" data-toggle="tab" aria-expanded="false">On Progress <span class="badge badge-pill badge-info shadow-info">2</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="#navpills-3" class="nav-link" data-toggle="tab" aria-expanded="true">Pending <span class="badge badge-pill badge-warning shadow-warning">4</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="#navpills-4" class="nav-link" data-toggle="tab" aria-expanded="true">Closed <span class="badge badge-pill badge-danger shadow-danger">1</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab-content project-list-group" id="myTabContent">	
+					<div class="tab-pane fade active show" id="navpills-1">
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441425</p>
+									<h5 class="title font-w600 mb-2"><a  class="text-black">To Kill a Mockingbird</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on April 8th, 2023</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-1.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Alex Noer</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-1.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Yoast Esec</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">April 29th 2023</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-warning text-warning status-btn mr-3">Pending</span>
+										<div class="dropdown">
+											<a data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441430</p>
+									<h5 class="title font-w600 mb-2"><a class="text-black">The Great Gatsby</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on Apr 10th, 2023</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-2.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-2.webp" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Apr 21st 2023</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-info text-info status-btn mr-3">Progress</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441429</p>
+									<h5 class="title font-w600 mb-2"><a  class="text-black">Ulysses</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on Jan 8th, 2023</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-3.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Angela Moss</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-3.webp" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Olivia Jonson</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Apr 29th 2023</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-warning text-warning status-btn mr-3">Pending</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441425</p>
+									<h5 class="title font-w600 mb-2"><a  class="text-black">The Catcher in the Rye</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on Sep 8th, 2022</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-4.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Endge Aes</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-4.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Bella Sirait</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Oct 29th 2022</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-warning text-warning status-btn mr-3">Pending</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441440</p>
+									<h5 class="title font-w600 mb-2"><a  class="text-black">Pride and Prejudice</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on Oct 20th, 2022</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-5.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-5.webp" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Nov 29th 2022</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-danger text-danger status-btn mr-3">Closed</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441458</p>
+									<h5 class="title font-w600 mb-2"><a  class="text-black">Adventures of Huckleberry Finn</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on Jan 14th, 2023</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-6.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Angela Moss</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-6.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Olivia Jonson</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Feb 17th 2023</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-warning text-warning status-btn mr-3">Pending</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+					</div>
+					<div class="tab-pane fade" id="navpills-2">
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441490</p>
+									<h5 class="title font-w600 mb-2"><a class="text-black">Alices Adventure in Wonderland</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on Mar 8th, 2023</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-7.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-7.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Mar 30th 2023</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-info text-info status-btn mr-3">Progress</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441425</p>
+									<h5 class="title font-w600 mb-2"><a  class="text-black">To the Lighthouse</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on Jul 23rd, 2022</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-8.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Angela Moss</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-8.webp" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Olivia Jonson</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Aug 23rd 2022</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-info text-info status-btn mr-3">Progress</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="navpills-3">
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441405</p>
+									<h5 class="title font-w600 mb-2"><a  class="text-black">The Sound and the Fury</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on Mar 11th 2022</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-8.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-9.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Apr 8th 2022</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-warning text-warning status-btn mr-3">Pending</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441422</p>
+									<h5 class="title font-w600 mb-2"><a href="post-details.html" class="text-black">Nineteen Eighty-four</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on Feb 14th, 2022</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/b-1.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Angela Moss</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-10.webp" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Olivia Jonson</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Apr 29th 2022</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-warning text-warning status-btn mr-3">Pending</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441411</p>
+									<h5 class="title font-w600 mb-2"><a href="post-details.html" class="text-black">Great Expectations</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on May 02th, 2022</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-1.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Endge Aes</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-1.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Bella Sirait</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">June 06th 2022</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-warning text-warning status-btn mr-3">Pending</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441409</p>
+									<h5 class="title font-w600 mb-2"><a href="post-details.html" class="text-black">Absalom, Absalom!Absalom, Absalom!</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on Jun 03, 2022</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-2.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-3.webp" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Jul 23th 2022</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-warning text-warning status-btn mr-3">Pending</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="navpills-4">
+						<div class="card">
+							<div class="project-info">
+								<div class="col-xl-3 my-2 col-lg-4 col-sm-6">
+									<p class="text-primary mb-1">ID-000441478</p>
+									<h5 class="title font-w600 mb-2"><a href="post-details.html" class="text-black">Middlemarch</a></h5>
+									<div class="text-dark"><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Bought on Aug 26th, 2022</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/author-8.jpg" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Author</span>
+											<h5 class="mb-0 pt-1 font-w50 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-4 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="project-media">
+											<img src="image/c-2.webp" alt="">
+										</div>
+										<div class="ml-2">
+											<span>Person Bought</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Kevin Sigh</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex align-items-center">
+										<div class="power-ic">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+										</div>
+										<div class="ml-2">
+											<span>Deadline</span>
+											<h5 class="mb-0 pt-1 font-w500 text-black">Sep 21st 2022</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 my-2 col-lg-6 col-sm-6">
+									<div class="d-flex project-status align-items-center">
+										<span class="btn bgl-danger text-danger status-btn mr-3">Closed</span>
+										<div class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="javascript:void(0);">Edit</a>
+												<a class="dropdown-item" href="javascript:void(0);">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!-- main content end -->
+
+	<!-- script -->
+    <script src="./js/global.min.js"></script>
+	<script src="./js/bootstrap-select.min.js"></script>
+	<script src="./css/Chart.bundle.min.js"></script>
+    <script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+    <script>
+		jQuery(document).ready(function(){
+			setTimeout(function() {
+				dezSettingsOptions.version = 'dark';
+				new dezSettings(dezSettingsOptions);
+			},0)
+		});
+	</script>
+    
+    <!-- script end -->
+</body>
+</html>
